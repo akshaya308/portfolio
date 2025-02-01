@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="AKSHAYA" content="width=device-width, initial-scale=1.0">
+    <title>AKSHAYA - ECE Student</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 100px 30px;
+            background: linear-gradient(45deg, #2980b9, #6dd5ed);
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5em;
+            margin: 0.5em 0;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        .cta-btn {
+            background-color: #f39c12;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .hero-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 50px 30px;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .skill {
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: #3498db;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #f39c12;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background-color: #e67e22;
+        }
+
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* AOS animation styles */
+        [data-aos="fade-left"],
+        [data-aos="fade-right"] {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        [data-aos="fade-left"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        [data-aos="fade-right"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>AKSHAYA</span></h1>
+            <p>Currently pursuing BE in Electronics & Communication Engineering | Passionate about Embedded Systems, IoT, and Signal Processing</p>
+            <img src="Akshaya.jpg" alt="Photo" class="hero-image">
+            <a href="#contact" class="cta-btn">Let's Connect!</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="section-title">
+
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <p>Hi, I'm <strong>AKSHAYA</strong>, an Electronics and Communication Engineering student currently pursuing my Bachelor's degree at <em>Sri Krishna College of Technology</em>. I'm passionate about designing intelligent systems, understanding communication protocols, and creating innovations that blend hardware and software. My goal is to bridge the gap between electronics and modern technologies like IoT, AI, and signal processing.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Embedded Systems</h3>
+                <div class="progress-bar" style="width: 85%;">85%</div>
+            </div>
+            <div class="skill">
+                <h3>Signal Processing</h3>
+                <div class="progress-bar" style="width: 75%;">75%</div>
+            </div>
+            <div class="skill">
+                <h3>Communication Systems</h3>
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="skill">
+                <h3>Programming</h3>
+                <div class="progress-bar" style="width: 90%;">90%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Smart Home Automation</h3>
+                <p>An IoT-based system that allows remote control of home appliances through a mobile app. Integrated with voice control using Alexa.</p>
+            </div>
+            <div class="project-card">
+                <h3>RFID-Based Attendance System</h3>
+                <p>A project that automates the attendance system using RFID tags and an online database. Ensures real-time data accuracy and easy tracking.</p>
+            </div>
+            <div class="project-card">
+                <h3>Signal Processing with FPGA</h3>
+                <p>Implemented advanced digital signal processing techniques on an FPGA board for noise reduction and signal enhancement in communication systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="section-title">
+            <h2>My Educational Journey</h2>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <h3>High School</h3>
+                <p><strong>Year:</strong> 2011 - 2023</p>
+                <p>Graduated with a focus on Science and Mathematics. Developed an interest in physics and electronics. I got centum in Chemistry</p>
+            </div>
+            
+            <div class="timeline-item">
+                <h3>Bachelor's Degree</h3>
+                <p><strong>Year:</strong> 2017 - Present</p>
+                <p>Currently pursuing my BE in Electronics and Communication Engineering. Actively involved in various projects and internships in embedded systems and IoT.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Information</h2>
+        </div>
+        <div class="contact-info">
+            <p><strong>Email:</strong> akshaya26vanitha@example.com</p>
+            <p><strong>Phone:</strong> 7871798255</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akshaya-jeevanantham-a9b546342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedinprofile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/akshaya308" target="_blank">akshaya-</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AKSHAYA - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
